@@ -1,0 +1,147 @@
+h2{
+  text-align: center;
+  color: #3AC43A;
+  font-size: 30px;
+  margin-top: 5%;
+}
+
+#ingresarDatos{
+  text-align: center;
+}
+
+#crear, #clave{
+  margin-top: 15px;
+  border: none;
+  background-color: white;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#hint{
+  color: gray;
+  font-size: 8px;
+  margin-bottom: 0px;
+}
+
+#opcionales{
+  color: #3AC43A;
+  font-size: 10px;
+  margin-top: 15px;
+}
+
+p{
+  color: #3AC43A;
+  font-weight: bold;
+  text-align: center;
+}
+
+#confirmarEliminar{
+  text-align: center;
+}
+
+#clave{
+  width: 50%;
+}
+
+#crear{
+  width: 60%;
+}
+
+#birth, #sexo, #genero, #enfer{
+  color: gray;
+  font-size: 10px;
+}
+
+#nacimiento{
+  width: 90%;
+  font-size: 0.75em;
+  text-align: left;
+  height: 35px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+}
+
+[name=genero]{
+  color: #3AC43A;
+  font-size: 0.75em;
+  border: none;
+  height: 35px;
+}
+
+label{
+  color: #3AC43A;
+  font-size: 0.75em;
+  font-size: 10px;
+}
+
+.col-3{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+button{
+  height: 40px;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+#buttons{
+  margin-bottom: 5%;
+  position: relative;
+  margin-top: 10%;
+}
+
+#btn_volver{
+  background-color: white;
+  color: #3AC43A;
+  box-shadow:inset 2px 2px 2px 2px #E6E7E6;
+}
+
+#btn_confirmar{
+  background-color: #3AC43A;
+  color: white;
+  box-shadow:inset 2px 2px 2px 2px #1F7E1E;
+}
+
+#enfermedad{
+  display: inline-block;
+}
+
+#btn{
+  padding-left: 10%;
+  display: inline;
+}
+
+#selec{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+body{
+  background-color: #F3F3E6;
+  margin:0px;
+  padding:0px;
+  height: 100%;
+}
+
+input[type=radio]{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+::placeholder{
+  font-size: 10px;
+  padding-left: 7px;
+}
+
+#lista{
+  text-align: center;
+}
+
+* {
+  font-family: "Perpetua Titling MT", serif;
+ }

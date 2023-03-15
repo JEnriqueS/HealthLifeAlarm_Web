@@ -1,0 +1,53 @@
+<div class="page-container">
+  <header>
+    <div>
+      <button mat-button class="menu-button" (click)="sidenav.toggle()">
+        <mat-icon [ngStyle]="{'color':'white'}">{{ isMenuOpen ? 'menu_open' : 'menu' }}</mat-icon>
+      </button>
+      <span class="app-title">Establecer meta</span>
+    </div>
+  </header>
+  <mat-sidenav-container class="sidenav-container">
+    <img class="img-responsive" src="assets/img/LogoApp.png">
+    <mat-sidenav #sidenav position="start" autoFocus="false" mode="over" [(opened)]="isMenuOpen" class="sidenav">
+      <br>
+      <div class="logo-nav">
+        <img src="./assets/img/LogoApp.png">
+        <p style="margin-left: 5%; font-size: large;">Health Life Alarm</p>
+        <p style="margin-left: 5%;">Usuario</p>
+      </div>
+      <hr>
+      <a mat-button routerLink="/mis_habitos"><mat-icon>home</mat-icon>Home</a>
+      <a mat-button routerLink="/mis_habitos"><mat-icon>fitness_center</mat-icon>Mis Hábitos</a>
+      <a mat-button routerLink="/mi_progreso"><mat-icon>bar_chart</mat-icon>Mi Progreso</a>
+      <a mat-button routerLink="/actualizar_datos"><mat-icon>manage_accounts</mat-icon>Actualizar Datos</a>
+      <a mat-button routerLink="/eliminar_cuenta"><mat-icon>delete_forever</mat-icon>Eliminar Cuenta</a>
+      <a mat-button routerLink=""><mat-icon>exit_to_app</mat-icon>Cerrar Sesión</a>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <main>
+        <br>
+        <div class="page-title">¿Por cuánto tiempo planea cumplir con esta meta?</div>
+        <br><br>
+        <div class="alarm_settings_row">
+          <div class="label_input">
+            <input type="number" id="meses" name="meses" min="00" max="99" class="input_number">
+            <div class="label">Meses</div>
+          </div>
+          <div class="label_input">
+            <input type="number" id="semanas" name="semanas" min="00" max="99" class="input_number">
+            <div class="label">Semanas</div>
+          </div>
+          <div class="label_input">
+            <input type="number" id="días" name="días" min="00" max="9999" class="input_number">
+            <div class="label">Días</div>
+          </div>
+        </div>
+        <br>
+        <button type="button" class="botonAppDos" [routerLink]="['/crear_habito']">VOLVER</button>
+        <button type="button" class="botonAppDos"  [routerLink]="['/mis_habitos']">CONFIRMAR</button>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+

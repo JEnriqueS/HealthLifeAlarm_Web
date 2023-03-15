@@ -1,0 +1,83 @@
+.row{
+  height:100px;
+}
+
+h2{
+  text-align: center;
+  margin-top: 10%;
+  color: #3AC43A;
+  font-size: 30px;
+}
+
+#icono{
+  text-align: center;
+  margin-top: 10%;
+}
+
+#textfield{
+  text-align: center;
+  margin-top: 20%;
+  position: relative;
+}
+
+#clave{
+  text-align: left;
+  color: #AFAFAF;
+}
+
+#buttons{
+  position:relative;
+  margin-top: 20%;
+
+}
+
+p{
+  color: #3AC43A;
+  font-weight: bold;
+}
+
+input{
+  border: none;
+  background-color: white;
+  height: 30px;
+  border-radius: 10px;
+}
+
+#ingresarCorreo{
+  text-align: center;
+  margin-top: 30%;
+}
+
+.col-6{
+  margin-top: 10%;
+  padding-left: 13%;
+}
+
+button{
+  height: 40px;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+#btn_volver{
+  background-color: white;
+  color: #3AC43A;
+  box-shadow:inset 2px 2px 2px 2px #E6E7E6;
+}
+
+#btn_confirmar{
+  background-color: #3AC43A;
+  color: white;
+  box-shadow:inset 2px 2px 2px 2px #1F7E1E;
+}
+
+body{
+  background-color: #F3F3E6;
+}
+
+* {
+  font-family: "Perpetua Titling MT", serif;
+ }

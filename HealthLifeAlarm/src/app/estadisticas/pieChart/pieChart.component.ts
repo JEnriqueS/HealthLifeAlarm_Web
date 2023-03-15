@@ -1,0 +1,64 @@
+import { Component } from '@angular/core';
+import { Color, ScaleType } from '@swimlane/ngx-charts';
+
+@Component({
+  selector: 'app-pieChart',
+  templateUrl: './pieChart.component.html',
+  styleUrls: ['./pieChart.component.css']
+})
+export class PieChartComponent {
+
+  view: [number, number] = [350, 200];
+
+  // options
+  gradient: boolean = true;
+  showLegend: boolean = false;
+  showLabels: boolean = false;
+  isDoughnut: boolean = false;
+  label: string = "Sesiones";
+  tooltipDisabled: boolean = false;
+
+  colorScheme: Color = {
+    name: 'myScheme',
+    selectable: true,
+    group: ScaleType.Ordinal,
+    domain: ['#000000', '#A67D03', '#F2CB05', '#4B4B4B'],
+  };
+
+  single = [
+    {
+      "name": "Ejercicio físico",
+      "value": 25
+    },
+    {
+      "name": "Alimentación",
+      "value": 22
+    },
+    {
+      "name": "Meditación",
+      "value": 18
+    },
+      {
+      "name": "Dormir",
+      "value": 12
+    }
+  ];
+
+  constructor() {
+    //Object.assign(this, { single });
+  }
+
+  onSelect(data: any): void {
+    console.log('Item clicked', JSON.parse(JSON.stringify(data)));
+  }
+
+  onActivate(data: any): void {
+    console.log('Activate', JSON.parse(JSON.stringify(data)));
+  }
+
+  onDeactivate(data: any): void {
+    console.log('Deactivate', JSON.parse(JSON.stringify(data)));
+  }
+
+
+}

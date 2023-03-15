@@ -1,0 +1,99 @@
+<div class="page-container">
+  <header>
+    <div>
+      <button mat-button class="menu-button" (click)="sidenav.toggle()">
+        <mat-icon [ngStyle]="{'color':'white'}">{{ isMenuOpen ? 'menu_open' : 'menu' }}</mat-icon>
+      </button>
+      <span class="app-title">Crear alarma</span>
+    </div>
+  </header>
+  <mat-sidenav-container class="sidenav-container">
+    <img class="img-responsive" src="assets/img/LogoApp.png">
+    <mat-sidenav #sidenav position="start" autoFocus="false" mode="over" [(opened)]="isMenuOpen" class="sidenav">
+      <br>
+      <div class="logo-nav">
+        <img src="./assets/img/LogoApp.png">
+        <p style="margin-left: 5%; font-size: large;">Health Life Alarm</p>
+        <p style="margin-left: 5%;">Usuario</p>
+      </div>
+      <hr>
+      <a mat-button routerLink="/mis_habitos"><mat-icon>home</mat-icon>Home</a>
+      <a mat-button routerLink="/mis_habitos"><mat-icon>fitness_center</mat-icon>Mis Hábitos</a>
+      <a mat-button routerLink="/mi_progreso"><mat-icon>bar_chart</mat-icon>Mi Progreso</a>
+      <a mat-button routerLink="/actualizar_datos"><mat-icon>manage_accounts</mat-icon>Actualizar Datos</a>
+      <a mat-button routerLink="/eliminar_cuenta"><mat-icon>delete_forever</mat-icon>Eliminar Cuenta</a>
+      <a mat-button routerLink=""><mat-icon>exit_to_app</mat-icon>Cerrar Sesión</a>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <main>
+        <div class="label">Nombre de la alarma:</div>
+        <input matInput placeholder="Nombre">
+        <br>
+        <br>
+        <div class="label">Seleccione los días de la alarma</div>
+        <div class="parentShort"><mat-chip>Lunes<mat-icon>cancel</mat-icon></mat-chip><mat-chip>Martes<mat-icon>cancel</mat-icon></mat-chip><mat-chip>Miércoles<mat-icon>cancel</mat-icon></mat-chip></div>
+        <div class="parentShort"><mat-chip>Jueves<mat-icon>cancel</mat-icon></mat-chip><mat-chip>Viernes<mat-icon>cancel</mat-icon></mat-chip><mat-chip>Sabado<mat-icon>cancel</mat-icon></mat-chip></div>
+        <div class="parentShort"><mat-chip>Domingo<mat-icon>cancel</mat-icon></mat-chip></div>
+        <br>
+        <div class="label">Seleccione la hora de la alarma</div>
+        <div class="alarm_settings_row">
+          <div class="label_input">
+            <input type="number" id="horas" name="horas" min="00" max="12" class="input_number">
+            <div class="label">Horas</div>
+          </div>
+          <div class="label_input">
+            <input type="number" id="minutos" name="minutos" min="00" max="59" class="input_number">
+            <div class="label">Minutos</div>
+          </div>
+          <mat-radio-group aria-labelledby="example-radio-group-label"
+          class="example-radio-group">
+            <mat-radio-button class="example-radio-button" value="am">AM</mat-radio-button>
+            <mat-radio-button class="example-radio-button" value="pm">PM</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <br>
+
+        <div class="alarm_settings_row"><div class="label_action_button">Ringtone</div> <div class="action_button"><mat-icon [routerLink]="['/agregar_ringtone']">add_circle</mat-icon></div></div>
+        <div class="alarm_settings_row"><div class="label_action_button">Vibración</div> <div class="action_button"><mat-slide-toggle></mat-slide-toggle></div></div>
+        <div class="alarm_settings_row"><div class="label_action_button">Mensaje de audio</div> <div class="action_button"><mat-icon (click)="openMensajeAudioDialog()">add_circle</mat-icon></div></div>
+        <div class="alarm_settings_row"><div class="label_action_button">Mensaje de texto</div> <div class="action_button"><mat-icon (click)="openTextoMotivacionalDialog()">add_circle</mat-icon></div></div>
+        <button type="button" class="botonAppDos" [routerLink]="['/mis_habitos']">VOLVER</button>
+        <button type="button" class="botonAppDos"  [routerLink]="['/mis_habitos']">CONFIRMAR</button>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<ng-template let-data #textoMotivacionalDialog>
+  <div class="content">
+    <h3 mat-dialog-title style="margin-left: 20px; color:'black'">Ingrese un mensaje motivacional</h3>
+    <div mat-dialog-content>
+      <mat-form-field class="example-full-width">
+        <mat-label></mat-label>
+        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+      </mat-form-field>
+    </div>
+    <br>
+    <div mat-dialog-actions align="end">
+      <button mat-button (click)="onNoClick()">VOLVER</button>
+      <button mat-button (click)="onNoClick()">CONTINUAR</button>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template let-data #mensajeAudioDialog>
+  <div class="content">
+    <h3 mat-dialog-title style="text-align: center; color:'black'">Grabe el audio que desea</h3>
+    <div mat-dialog-content>
+      <mat-icon style="font-size: 90px; height: fit-content !important; width:fit-content !important; margin-left: 35%;">mic</mat-icon>
+      <div style="height: fit-content !important; width:150px !important; margin-left: 25%; text-align: center; color: black;">Toque para iniciar la grabación</div>
+      <br>
+      <div class="parentShort"><mat-chip class="rec_chip"><mat-icon>pause</mat-icon>Pausar</mat-chip><mat-chip class="rec_chip"><mat-icon>play_arrow</mat-icon>Reproducir</mat-chip><mat-chip class="rec_chip"><mat-icon>delete</mat-icon>Borrar</mat-chip></div>
+    </div>
+    <br>
+    <div mat-dialog-actions align="end">
+      <button mat-button (click)="onNoClick()">VOLVER</button>
+      <button mat-button (click)="onNoClick()">CONTINUAR</button>
+    </div>
+  </div>
+</ng-template>

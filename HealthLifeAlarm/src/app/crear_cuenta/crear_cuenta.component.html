@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Hello, world!</title>
+  </head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="display-1">Crear cuenta</h2>
+      </div>
+    </div>
+    <div class="ingresarDatos">
+      <div id="icono">
+        <p>Ingrese los siguientes datos</p>
+      </div>
+    </div>
+    <div class="row">
+      <div id="confirmarEliminar">
+        <input matInput type="text" id="crear" name="usuario" placeholder="Nombres(s)">
+        <input matInput type="text" id="crear" name="usuario" placeholder="Apellidos">
+        <input matInput type="text" id="crear" name="usuario" placeholder="Correo">
+        <p id="hint">Ingrese un correo electrónico ej: micorreo@mail.com</p>
+        <input matInput type="text" id="clave" name="usuario" placeholder="clave">
+        <mat-icon style="vertical-align: middle;">remove_red_eye</mat-icon>
+        <p id="hint">Ingrese una clave de mínimo 5 dígitos. Incluya mayúsculas, minúsculas, números y símbolos</p>
+        <input matInput type="text" id="clave" name="usuario" placeholder="Confirmar clave">
+        <mat-icon style="vertical-align: middle;">remove_red_eye</mat-icon>
+      </div>
+    </div>
+    <div class="row">
+      <div id="opcionales">
+        <p>Los siguientes datos nos ayudan a recomendarle planes (opcionales):</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <p id="birth">fecha de nacimiento:</p>
+        <input type="text" id="nacimiento" name="usuario" placeholder="AAAA/MM/DD">
+      </div>
+      <div class="col-4" id="datosOpcionales">
+        <div>
+          <p id="sexo">Sexo:</p>
+        </div>
+        <div>
+          <div id="lista">
+            <input type="radio" id="fem">
+            <label for="fem">Femenino</label>
+          </div>
+          <div id="lista">
+            <input type="radio" id="mas">
+            <label for="mas">Masculino</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <p id="genero">genero:</p>
+        <select name="genero">
+          <option value="seleccionar" selected>Seleccione</option>
+          <option value="hombre">Hombre</option>
+          <option value="mujer">Mujer</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <div class="col-6" id="enfermedad">
+          <div>
+            <p id="enfer">Sufre de alguna enfermedad</p>
+          </div>
+          <div id="selec">
+            <div class="col-3">
+              <input type="radio" name="no">
+            </div>
+            <div class="col-3">
+              <label for="no">No</label>
+            </div>
+          </div>
+          <div id="selec">
+            <div class="col-3">
+              <input type="radio" name="si">
+            </div>
+            <div class="col-3">
+              <label for="no">Si</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-6" id="enfermedad">
+          <input type="text" id="nacimiento" placeholder="Indique cuál?">
+        </div>
+      </div>
+    </div>
+    <div class="row" id="buttons">
+      <div class="col-6">
+        <button type="button" id="btn_volver" [routerLink]="['/']">VOLVER</button>
+      </div>
+      <div class="col-6">
+        <button type="button" id="btn_volver" [routerLink]="['/mis_habitos']">CONFIRMAR</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>

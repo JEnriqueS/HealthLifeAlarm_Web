@@ -1,0 +1,67 @@
+<div class="page-container">
+  <header>
+    <div>
+      <button mat-button class="menu-button" (click)="sidenav.toggle()">
+        <mat-icon [ngStyle]="{'color':'white'}">{{ isMenuOpen ? 'menu_open' : 'menu' }}</mat-icon>
+      </button>
+      <span class="app-title">Estadísticas</span>
+    </div>
+  </header>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav position="start" autoFocus="false" mode="over" [(opened)]="isMenuOpen" class="sidenav">
+      <br>
+      <div class="logo-nav">
+        <img src="./assets/img/LogoApp.png">
+        <p style="margin-left: 5%; font-size: large;">Health Life Alarm</p>
+        <p style="margin-left: 5%;">Usuario</p>
+      </div>
+      <hr>
+      <a mat-button type="button" routerLink="/mis_habitos"><mat-icon>home</mat-icon>Home</a>
+      <a mat-button type="button" routerLink="/mis_habitos"><mat-icon>fitness_center</mat-icon>Mis Hábitos</a>
+      <a mat-button type="button" routerLink="/mi_progreso"><mat-icon>bar_chart</mat-icon>Mi Progreso</a>
+      <a mat-button type="button" routerLink="/actualizar_datos"><mat-icon>manage_accounts</mat-icon>Actualizar Datos</a>
+      <a mat-button type="button" routerLink="/eliminar_cuenta"><mat-icon>delete_forever</mat-icon>Eliminar Cuenta</a>
+      <a mat-button type="button" routerLink=""><mat-icon>exit_to_app</mat-icon>Cerrar Sesión</a>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <main>
+        <div>
+          <h2>Hábitos más frecuentados en el último mes:</h2>
+        </div>
+        <div>
+          <ngx-charts-bar-horizontal
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="single"
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          [legend]="showLegend"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          [xAxisLabel]="xAxisLabel"
+          [yAxisLabel]="yAxisLabel"
+          (select)="onSelect($event)"
+          (activate)="onActivate($event)"
+          (deactivate)="onDeactivate($event)">
+        </ngx-charts-bar-horizontal>
+        </div>
+        <div>
+          <h2 style="margin-top: 20%;">Distribución de tiempo empleado por hábito:</h2>
+        </div>
+        <div>
+          <app-pieChart></app-pieChart>
+        </div>
+        <div class="row" id="buttons">
+          <div>
+            <button mat-button type="button" id="btn_volver" [routerLink]="['/mi_progreso']">VOLVER</button>
+          </div>
+        </div>
+      </main>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+</div>
+
+
+

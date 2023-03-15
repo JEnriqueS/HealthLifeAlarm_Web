@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+<body>
+<div class="page-container">
+  <header>
+    <div>
+      <button mat-button class="menu-button" (click)="sidenav.toggle()">
+        <mat-icon [ngStyle]="{'color':'white'}">{{ isMenuOpen ? 'menu_open' : 'menu' }}</mat-icon>
+      </button>
+      <span class="app-title">Agregar ringtone de alarma</span>
+    </div>
+  </header>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav position="start" autoFocus="false" mode="over" [(opened)]="isMenuOpen" class="sidenav">
+      <br>
+      <div class="logo-nav">
+        <img src="./assets/img/LogoApp.png">
+        <p style="margin-left: 5%; font-size: large;">Health Life Alarm</p>
+        <p style="margin-left: 5%;">Usuario</p>
+      </div>
+      <hr>
+      <a mat-button type="button" routerLink="/mis_habitos"><mat-icon>home</mat-icon>Home</a>
+      <a mat-button type="button" routerLink="/mis_habitos"><mat-icon>fitness_center</mat-icon>Mis Hábitos</a>
+      <a mat-button type="button" routerLink="/mi_progreso"><mat-icon>bar_chart</mat-icon>Mi Progreso</a>
+      <a mat-button type="button" routerLink="/actualizar_datos"><mat-icon>manage_accounts</mat-icon>Actualizar Datos</a>
+      <a mat-button type="button" routerLink="/eliminar_cuenta"><mat-icon>delete_forever</mat-icon>Eliminar Cuenta</a>
+      <a mat-button type="button" routerLink=""><mat-icon>exit_to_app</mat-icon>Cerrar Sesión</a>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <main>
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <button mat-fab routerLink="/buscar_dispositivo" style="background-color: #006400;">
+                <mat-icon>add</mat-icon>
+              </button>
+            </div>
+            <div class="col-10">
+              <h2>Buscar en el dispositivo</h2>
+            </div>
+          </div>
+          <div class="row">
+            <mat-selection-list #audios [multiple]="false">
+              <mat-list-option *ngFor="let audio of listOfAudios" [value]="audio">
+                {{audio}}
+              </mat-list-option>
+            </mat-selection-list>
+          </div>
+          <div class="row" id="buttons">
+            <div class="col-6" id="btn">
+              <button mat-button type="button" id="btn_volver" [routerLink]="['/crear_alarma']">VOLVER</button>
+            </div>
+            <div class="col-6" id="btn">
+              <button mat-button type="button" id="btn_confirmar" [routerLink]="['/crear_alarma']">CONFIRMAR</button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </main>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+</div>
+</body>
+</html>
+
+

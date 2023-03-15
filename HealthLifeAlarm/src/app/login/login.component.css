@@ -1,0 +1,77 @@
+.row{
+  height:100px;
+}
+
+#titulo{
+  margin-top: 10%;
+  margin-bottom: 10px;
+  color: white;
+}
+
+h1{
+  text-align: center;
+}
+
+.display-1{
+  text-transform: lowercase !important;
+}
+
+#textfield{
+  position: relative;
+  text-align: center;
+  margin-top: 50%;
+}
+
+input::placeholder {
+  text-align: left;
+  color: #AFAFAF;
+  padding-left: 5px;
+}
+
+p{
+  color: white;
+  font-weight: bold;
+}
+
+input{
+  border: none;
+  background-color: white;
+  height: 40px;
+  border-radius: 10px;
+}
+
+#olvideClave{
+  position: relative;
+  text-align: center;
+  margin-top: 60%;
+}
+
+.col-6{
+  margin-top: 10%;
+  padding-left: 7%;
+
+}
+
+button{
+  height: 40px;
+  width: 80%;
+  background-color: #3AC43A;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-size: 0.75em;
+  font-weight: bold;
+  box-shadow:inset 2px 2px 2px 2px #1F7E1E;
+  position: relative;
+  margin-top: 80%;
+}
+
+body{
+  background-color: #F3F3E6;
+  background-image: url('backgroundImage.jpg');
+  background-size: cover;
+}
+
+* {
+ font-family: "Perpetua Titling MT", serif;
+}

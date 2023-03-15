@@ -1,0 +1,270 @@
+.page-container {
+  height: 100%;
+  background: #F3F3E6;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.page-container a {
+  color: inherit;
+  text-decoration: none;
+}
+.page-container header {
+  background: #3ac43a;
+  color: #fff;
+  padding: 18px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.page-container header .menu-button {
+  margin-right: 24px;
+  min-width: 0;
+  padding: 0;
+  line-height: normal;
+}
+.page-container header .app-title {
+  padding: 0 3px;
+}
+.sidenav-container {
+  flex: 1;
+}
+.sidenav-container .sidenav {
+  min-width: 80%;
+  color:#3ac43a;
+}
+.sidenav-container .sidenav a {
+  display: block;
+  padding: 6px 24px;
+  width: 100%;
+  text-align: left;
+}
+.sidenav-container main {
+  padding: 18px 24px;
+}
+
+.logo-nav img {
+  width: 110px;
+  height: 50px;
+  margin-left: 5%;
+}
+
+p {
+  font-family: "Perpetua Titling MT", serif;
+}
+
+a {
+  font-family: "Perpetua Titling MT", serif;
+}
+
+.app-title {
+  font-family: "Perpetua Titling MT", serif;
+  color: #ffffff;
+  font-size: large;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.parentShort {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:initial;
+}
+
+.mat-mdc-standard-chip {
+  --mdc-chip-label-text-color: #fff;
+  --mdc-chip-elevated-container-color: #006400;
+  margin: 0.5%;
+  font-family: "Perpetua Titling MT", serif;
+}
+
+.botonAppSolo{
+  height: 40px;
+  width: 80%;
+  background-color: #3AC43A;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow:inset 2px 2px 2px 2px #1F7E1E;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.page-title {
+  font-family: "Perpetua Titling MT", serif;
+  color: #3AC43A;
+  font-size: x-large;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.botonAppDos{
+  height: 40px;
+  width: 40%;
+  background-color: #3AC43A;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow:inset 2px 2px 2px 2px #1F7E1E;
+  display: inline-block !important;
+  margin-top: 5%;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+}
+
+.content {
+  position:absolute !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:#3ac43a;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+button {
+  margin-right: 8px;
+}
+
+::ng-deep .mat-mdc-radio-button .mdc-form-field {
+  color:#3ac43a !important;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+.mdc-button {
+  color:#3ac43a !important;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+input {
+  color:#3ac43a !important;
+  font-family: "Perpetua Titling MT", serif !important;
+  font-size: medium;
+  background-color: #ffffff;
+  border: 2px;
+  border-radius: 5%;
+  border-color: #F3F3E6;
+  border-style: solid;
+  height: 25px;
+}
+
+.label {
+  margin-left: auto;
+  margin-right: auto;
+  color:#3ac43a;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+label {
+  display: block;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+input,
+label {
+  margin: 1px 0;
+}
+
+.input_number {
+  height: 60px;
+  width: 35px;
+  text-align: center;
+}
+
+input[type=number]:hover::-webkit-inner-spin-button {
+  width: 14px;
+  height: 60px;
+}
+
+
+.label_input {
+  position: relative !important;
+  display: block !important;
+  margin-left: 0%;
+  margin-right: 3%;
+  color:#3ac43a;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+.alarm_settings_row {
+  display: flex;
+  flex-wrap:wrap;
+  margin-left: 0%;
+}
+
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0;
+  align-items: flex-start;
+}
+
+.example-radio-button {
+  margin: 1px;
+}
+
+.label_action_button {
+  width: 40%;
+  height: 35px;
+  color:#3ac43a;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+.action_button {
+  width: 10%;
+  margin-left: 20%;
+  color:#95D90460;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 80%;
+  margin-left: 10%;
+}
+
+textarea {
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+.rec_msg {
+  height: 100px;
+  width: 50px;
+  text-align: center;
+  display: block;
+  position: relative !important;
+}
+
+.rec_chip {
+  --mdc-chip-elevated-container-color: #3ac43a;
+}
+
+button {
+  margin-right: 8px;
+  font-family: "Perpetua Titling MT", serif !important;
+}

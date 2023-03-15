@@ -1,0 +1,64 @@
+<div class="page-container">
+  <header>
+    <div>
+      <button mat-button class="menu-button" (click)="sidenav.toggle()">
+        <mat-icon [ngStyle]="{'color':'white'}">{{ isMenuOpen ? 'menu_open' : 'menu' }}</mat-icon>
+      </button>
+      <span class="app-title">Alarmas del Hábito</span>
+    </div>
+  </header>
+  <mat-sidenav-container class="sidenav-container">
+    <img class="img-responsive" src="assets/img/LogoApp.png">
+    <mat-sidenav #sidenav position="start" autoFocus="false" mode="over" [(opened)]="isMenuOpen" class="sidenav">
+      <br>
+      <div class="logo-nav">
+        <img src="./assets/img/LogoApp.png">
+        <p style="margin-left: 5%; font-size: large;">Health Life Alarm</p>
+        <p style="margin-left: 5%;">Usuario</p>
+      </div>
+      <hr>
+      <a mat-button routerLink="/mis_habitos"><mat-icon>home</mat-icon>Home</a>
+      <a mat-button routerLink="/mis_habitos"><mat-icon>fitness_center</mat-icon>Mis Hábitos</a>
+      <a mat-button routerLink="/mi_progreso"><mat-icon>bar_chart</mat-icon>Mi Progreso</a>
+      <a mat-button routerLink="/actualizar_datos"><mat-icon>manage_accounts</mat-icon>Actualizar Datos</a>
+      <a mat-button routerLink="/eliminar_cuenta"><mat-icon>delete_forever</mat-icon>Eliminar Cuenta</a>
+      <a mat-button routerLink=""><mat-icon>exit_to_app</mat-icon>Cerrar Sesión</a>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <main>
+        <br>
+        <div class="page-title">Nombre del Hábito</div>
+        <br><br>
+        <mat-list>
+          <div class="parentShort"><mat-list-item>Correr</mat-list-item><mat-chip [routerLink]="['/modificar_alarma']"><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip (click)="openInfoDialog()"><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
+          <div class="parentShort"><mat-list-item>Nadar</mat-list-item><mat-chip [routerLink]="['/modificar_alarma']"><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip (click)="openInfoDialog()"><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
+          <div class="parentShort"><mat-list-item>Gimnasio</mat-list-item><mat-chip [routerLink]="['/modificar_alarma']"><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip (click)="openInfoDialog()"><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
+          <div class="parentShort"><mat-list-item>Yoga</mat-list-item><mat-chip [routerLink]="['/modificar_alarma']"><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip (click)="openInfoDialog()"><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
+        </mat-list>
+        <button type="button" class="botonAppDos" [routerLink]="['/mis_habitos']">VOLVER</button>
+        <button type="button" class="botonAppDos"  [routerLink]="['/crear_alarma']">CREAR ALARMA</button>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<ng-template let-data #myInfoDialog>
+  <div class="content">
+    <h3 mat-dialog-title style="margin-left: 20px; color:'black'">¿Por qué motivo desea eliminarla?</h3>
+    <div mat-dialog-content>
+      <mat-radio-group>
+        <mat-radio-button value="1">No la estoy usando</mat-radio-button>
+        <mat-radio-button value="2">No he mejorado mi hábito</mat-radio-button>
+        <mat-radio-button value="3">Quiero mejorar otro hábito</mat-radio-button>
+        <mat-radio-button value="4">Otro</mat-radio-button>
+      </mat-radio-group>
+      <br>
+      <input matInput placeholder="Describa su motivo" style="margin-left: 30px;">
+    </div>
+    <br>
+    <div mat-dialog-actions align="end">
+      <button mat-button (click)="onNoClick()">VOLVER</button>
+      <button mat-button (click)="onNoClick()">CONTINUAR</button>
+    </div>
+  </div>
+</ng-template>

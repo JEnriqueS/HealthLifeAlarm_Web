@@ -1,0 +1,56 @@
+<div class="page-container">
+  <header>
+    <div>
+      <button mat-button class="menu-button" (click)="sidenav.toggle()">
+        <mat-icon [ngStyle]="{'color':'white'}">{{ isMenuOpen ? 'menu_open' : 'menu' }}</mat-icon>
+      </button>
+      <span class="app-title">Mi Progreso</span>
+    </div>
+  </header>
+  <mat-sidenav-container class="sidenav-container">
+    <img class="img-responsive" src="assets/img/LogoApp.png">
+    <mat-sidenav #sidenav position="start" autoFocus="false" mode="over" [(opened)]="isMenuOpen" class="sidenav">
+      <br>
+      <div class="logo-nav">
+        <img src="./assets/img/LogoApp.png">
+        <p style="margin-left: 5%; font-size: large;">Health Life Alarm</p>
+        <p style="margin-left: 5%;">Usuario</p>
+      </div>
+      <hr>
+      <a mat-button routerLink="/mis_habitos"><mat-icon>home</mat-icon>Home</a>
+      <a mat-button routerLink="/mis_habitos"><mat-icon>fitness_center</mat-icon>Mis Hábitos</a>
+      <a mat-button routerLink="/mi_progreso"><mat-icon>bar_chart</mat-icon>Mi Progreso</a>
+      <a mat-button routerLink="/actualizar_datos"><mat-icon>manage_accounts</mat-icon>Actualizar Datos</a>
+      <a mat-button routerLink="/eliminar_cuenta"><mat-icon>delete_forever</mat-icon>Eliminar Cuenta</a>
+      <a mat-button routerLink=""><mat-icon>exit_to_app</mat-icon>Cerrar Sesión</a>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <main>
+        <div class="content">
+          <div class="container">
+            <div class="box"><mat-spinner mode="determinate" value="40"></mat-spinner></div>
+            <div class="box overlay"><mat-icon class="mat-icon-size">self_improvement</mat-icon></div>
+          </div>
+          <div class="container">
+            <div class="box"><mat-spinner mode="determinate" value="50"></mat-spinner></div>
+            <div class="box overlay"><mat-icon class="mat-icon-size">fitness_center</mat-icon></div>
+          </div>
+          <div class="container">
+            <div class="box"><mat-spinner mode="determinate" value="76"></mat-spinner></div>
+            <div class="box overlay"><mat-icon class="mat-icon-size">local_library</mat-icon></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="container_text">40% Meditación</div>
+          <div class="container_text">50% Ejercicio</div>
+          <div class="container_text">76% Lecturas</div>
+        </div>
+        <br>
+        <div class="content">Ha alcanzado un total de <strong>72</strong> alarmas para mejorar sus hábitos</div>
+        <br>
+        <button type="button" class="botonAppDos" [routerLink]="['/mis_habitos']">VOLVER</button>
+        <button type="button" class="botonAppDos"  [routerLink]="['/estadisticas']">VER ESTADÍSTICAS</button>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
