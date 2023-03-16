@@ -12,6 +12,7 @@ import { Eliminar_cuentaModule } from './eliminar_cuenta/eliminar_cuenta.module'
 import { Actualizar_datosModule } from './actualizar_datos/actualizar_datos.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { EstadisticasModule } from './estadisticas/estadisticas.module';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { EstadisticasModule } from './estadisticas/estadisticas.module';
     Eliminar_cuentaModule,
     Actualizar_datosModule,
     MatDialogModule,
-    EstadisticasModule
+    EstadisticasModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

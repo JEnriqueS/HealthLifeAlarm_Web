@@ -7,6 +7,7 @@ import { RecuperarClaveComponent } from './recuperarClave/recuperarClave.compone
 import { Eliminar_cuentaComponent } from './eliminar_cuenta/eliminar_cuenta.component';
 import { Actualizar_datosComponent } from './actualizar_datos/actualizar_datos.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
@@ -43,7 +44,13 @@ const routes: Routes = [
     path: 'estadisticas',
     component: EstadisticasComponent,
     pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+    pathMatch: 'full'
   }
+
 ];
 
 @NgModule({

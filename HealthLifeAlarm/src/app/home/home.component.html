@@ -1,12 +1,9 @@
 <mat-grid-list cols="4" rowHeight="2:1">
-  <mat-grid-tile [colspan]="3 " [rowspan]="1">
+  <mat-grid-tile [colspan]="4 " [rowspan]="1">
     <div class="logo-nav">
       <img src="./assets/img/LogoApp.png">
       <div class="app-title">Health Life Alarm</div>
     </div>
-  </mat-grid-tile>
-  <mat-grid-tile [colspan]="1" [rowspan]="4">
-    <div class="right_panel"></div>
   </mat-grid-tile>
   <mat-grid-tile [colspan]="1" [rowspan]="3" class="mat-elevation-z8">
     <mat-nav-list class="sidenav mat-elevation-z8">
@@ -20,21 +17,12 @@
       <button mat-button [routerLink]=""><mat-icon>exit_to_app</mat-icon>Cerrar Sesión</button>
     </mat-nav-list>
   </mat-grid-tile>
-  <mat-grid-tile [colspan]="2" [rowspan]="3">
+  <mat-grid-tile [colspan]="3" [rowspan]="3">
     <div class="main_content">
       <div class="header_icon">
-        <h1>Mis hábitos</h1>
-        <mat-icon>fitness_center</mat-icon>
+        <h1>Bienvenido Nombre Usuario!</h1>
       </div>
-      <p class="main_content">Esta es la lista de tus hábitos. Recuerda que puedes administrarlos desde tu dispositivo móvil usando la app de <strong>Health Life Alarm</strong></p>
-      <mat-list role="list">
-        <mat-list-item role="listitem">Ejercicio</mat-list-item>
-        <mat-divider></mat-divider>
-        <mat-list-item role="listitem">Meditar</mat-list-item>
-        <mat-divider></mat-divider>
-        <mat-list-item role="listitem">Leer</mat-list-item>
-        <mat-divider></mat-divider>
-      </mat-list>
+      <div class="center_panel"></div>
     </div>
   </mat-grid-tile>
 </mat-grid-list>
