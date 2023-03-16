@@ -9,13 +9,15 @@ import {MatListModule} from '@angular/material/list';
 import {MatChipsModule} from '@angular/material/chips';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { PieChartComponent } from './pieChart/pieChart.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 const uiModules = [
   MatSidenavModule,
   MatIconModule,
   MatInputModule,
   MatListModule,
-  MatChipsModule
+  MatChipsModule,
+  MatGridListModule
 ];
 
 @NgModule({

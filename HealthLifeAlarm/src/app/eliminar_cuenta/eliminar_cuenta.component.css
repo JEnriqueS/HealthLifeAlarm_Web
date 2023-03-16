@@ -24,12 +24,14 @@ img{
 
 p{
   color: #3AC43A;
+  margin-bottom: 0px;
 }
 
 #buttons{
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
+  margin-top: 10%;
 }
 
 button{
@@ -57,7 +59,7 @@ button{
 
 mat-icon {
   font-size: 100px;
-  height: 850px;
+  height: 150px;
   width: 100px;
   color: #3AC43A;
   margin-left: 50%;

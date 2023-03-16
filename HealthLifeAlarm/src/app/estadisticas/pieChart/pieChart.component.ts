@@ -8,7 +8,7 @@ import { Color, ScaleType } from '@swimlane/ngx-charts';
 })
 export class PieChartComponent {
 
-  view: [number, number] = [450, 320];
+  view: [number, number] = [300, 200];
 
   // options
   gradient: boolean = true;
