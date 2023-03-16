@@ -1,105 +1,85 @@
-.row{
-  height:100px;
+h1{
+  text-align: center;
+  color: #3AC43A;
+  font-size: 4em;
+  padding-top: 20%;
 }
 
 h2{
   text-align: center;
-  margin-top: 10%;
   color: #3AC43A;
-  font-size: 30px;
+  font-size: 3em;
+  padding-top: 10%;
+
 }
 
-#icono{
-  text-align: center;
-  margin-top: 5%;
+* {
+ font-family: "Perpetua Titling MT", serif;
+ background-color: #F3F3E6;
 }
 
-#radios{
-  text-align: center;
-  margin-top: 30%;
-  position:relative
-}
-
-label{
-  color: #3AC43A;
-  text-align: center;
-  font-size: 0.5em;
-  font-weight: bold;
-}
-
-#clave{
-  text-align: left;
-  color: #AFAFAF;
+img{
+  height: fit-content;
 }
 
 p{
   color: #3AC43A;
-  font-weight: bold;
-  text-transform: lowercase;
-}
-
-input{
-  border: none;
-  background-color: white;
-  height: 30px;
-  border-radius: 10px;
-}
-
-#confirmarEliminar{
-  text-align: center;
-  margin-top: 30%;
-  position: relative;
-}
-
-.col-6{
-  margin-top: 6%;
-  padding-left: 13%;
-}
-
-.col-3{
-  display: inline;
-  padding: 0px;
-  margin: 0px;
-}
-
-#radio{
-  width: auto;
-  padding-left: 10%;
-}
-
-button{
-  height: 40px;
-  width: 80%;
-  border-radius: 10px;
-  border: none;
-  font-size: 0.75em;
-  font-weight: bold;
 }
 
 #buttons{
-  margin-bottom: 5%;
+  margin-top: 20%;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+
+button{
+  height: 100px;
+  width: 70%;
+  border-radius: 10px;
+  border: none;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 #btn_volver{
   background-color: white;
   color: #3AC43A;
-  box-shadow:inset 2px 2px 2px 2px #E6E7E6;
 }
 
 #btn_confirmar{
   background-color: #3AC43A;
   color: white;
-  box-shadow:inset 2px 2px 2px 2px #1F7E1E;
 }
 
-body{
-  background-color: #F3F3E6;
-  margin:0px;
-  padding:0px;
-  height: 100%;
+#buttondg{
+  border-radius: 5px;
+  color: #808080;
+  background-color: white;
+  text-align: center;
+  height: 20%;
+  width: 40%;
+  margin-right: 32%;
+  margin-top: 10%;
 }
 
-* {
- font-family: "Perpetua Titling MT", serif;
+.material-icons{
+  font-family: 'Material Icons' !important;
+}
 
+mat-icon {
+  font-size: 200px;
+  height: 170px;
+  width: 200px;
+  color: #3AC43A;
+  margin-left: 50%;
+}
+
+p{
+  font-size: 2em;
+}
+
+.container-fluid{
+  background: #D4CFB6;
 }

@@ -1,236 +1,85 @@
-.page-container {
-  height: 100%;
-  background: #F3F3E6;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-}
-.page-container a {
-  color: inherit;
-  text-decoration: none;
-}
-.page-container header {
-  background: #3ac43a;
-  color: #fff;
-  padding: 18px 24px;
-  font-size: 14px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-}
-.page-container header .menu-button {
-  margin-right: 24px;
-  min-width: 0;
-  padding: 0;
-  line-height: normal;
-  background-color: #3AC43A;
-  border: none;
-}
-.page-container header .app-title {
-  padding: 0 3px;
-}
-.sidenav-container {
-  background-color: #F3F3E6;
-  flex: 1;
-}
-.sidenav-container .sidenav {
-  min-width: 80%;
-  color:#3ac43a;
-}
-.sidenav-container .sidenav a {
-  display: block;
-  padding: 6px 24px;
-  width: 100%;
-  text-align: left;
-}
-.sidenav-container main {
-  padding: 18px 24px;
-}
-
-.logo-nav img {
-  width: 110px;
-  height: 50px;
-  margin-left: 5%;
-}
-
-.app-title {
-  color: #ffffff;
-  font-size: large;
-}
-
-.parent {
-  display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-}
-
-.mat-mdc-standard-chip {
-  --mdc-chip-label-text-color: #fff;
-  --mdc-chip-elevated-container-color: #3ac43a;
-}
-
-.botonAppSolo{
-  height: 40px;
-  width: 80%;
-  background-color: #3AC43A;
-  border-radius: 10px;
-  color: white;
-  border: none;
-  font-size: 0.75em;
-  font-weight: bold;
-  text-transform: uppercase;
-  box-shadow:inset 2px 2px 2px 2px #1F7E1E;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-#confirmarEliminar{
+h1{
   text-align: center;
-}
-
-#crear, #clave{
-  margin-top: 10px;
-  border: none;
-  background-color: white;
-  height: 35px;
-  border-radius: 5px;
-  width: max-content;
-}
-
-#clave{
-  width: 43%;
-}
-
-#crear{
-  width: 48%;
-}
-
-#opcionales{
   color: #3AC43A;
-  font-size: 8px;
-  margin-top: 15px;
+  font-size: 4em;
+  padding-top: 20%;
 }
 
-#enfer{
-  padding-top: 10px;
-}
-
-#birth, #sexo, #genero, label, #enfer{
-  color: gray;
-  font-size: 8px;
-  text-align: justify;
-}
-
-#nacimiento{
-  width: 100px;
-  font-size: 0.75em;
+h2{
   text-align: center;
-  height: 35px;
-  border: none;
-  background-color: white;
-  border-radius: 5px;
-}
-
-#datosOpcionales{
-  margin-left: 5%;
-}
-
-#radioSexo{
-  display: block;
-  margin-right: 20px;
-}
-
-.col-3{
-  display: inline-block;
-  padding: 0px;
-  margin-top: 10px;
-}
-
-#btn{
-  padding-left: 10%;
-  display: inline;
-}
-
-#labelRadio{
   color: #3AC43A;
-  font-size: 8px;
-  margin-top: 15px;
+  font-size: 3em;
+  padding-top: 10%;
+
 }
 
-#selec{
-  display: inline-block;
-  margin-right: 10px;
+* {
+ font-family: "Perpetua Titling MT", serif;
+ background-color: #F3F3E6;
 }
 
-[name=genero]{
-  color: #3AC43A;
-  font-size: 0.75em;
-  border: none;
-  height: 35px;
-}
-
-#lista{
-  display: inline-block;
+img{
+  height: fit-content;
 }
 
 p{
   color: #3AC43A;
-  font-weight: bold;
-  text-align: center;
-}
-
-input [name=name], label {
-  display:block;
-}
-
-label{
-  margin-left: 25%;
-  text-align: left;
-  margin-top: 5px;
-}
-
-[type=button]{
-  height: 40px;
-  width: 30%;
-  border-radius: 10px;
-  border: none;
-  font-size: 0.75em;
-  font-weight: bold;
 }
 
 #buttons{
-  position: relative;
-  margin-bottom: 5%;
-  margin-top: 15%;
+  margin-top: 20%;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+
+button{
+  height: 100px;
+  width: 70%;
+  border-radius: 10px;
+  border: none;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 #btn_volver{
   background-color: white;
   color: #3AC43A;
-  box-shadow:inset 2px 2px 2px 2px #E6E7E6;
 }
 
 #btn_confirmar{
   background-color: #3AC43A;
   color: white;
-  box-shadow:inset 2px 2px 2px 2px #1F7E1E;
 }
 
-#enfermedad{
-  display: inline-block;
-  margin-left: 10%;
+#buttondg{
+  border-radius: 5px;
+  color: #808080;
+  background-color: white;
+  text-align: center;
+  height: 20%;
+  width: 40%;
+  margin-right: 32%;
+  margin-top: 10%;
 }
 
-* {
-  font-family: "Perpetua Titling MT", serif;
- }
-
- .material-icons{
-    font-family: 'Material Icons' !important;
+.material-icons{
+  font-family: 'Material Icons' !important;
 }
 
+mat-icon {
+  font-size: 200px;
+  height: 170px;
+  width: 200px;
+  color: #3AC43A;
+  margin-left: 50%;
+}
+
+p{
+  font-size: 2em;
+}
+
+.container-fluid{
+  background: #D4CFB6;
+}
