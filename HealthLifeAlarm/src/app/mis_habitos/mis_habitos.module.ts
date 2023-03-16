@@ -13,7 +13,6 @@ import { Mis_habitosComponent } from './mis_habitos.component';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatInputModule} from '@angular/material/input';
 import {MatGridListModule} from '@angular/material/grid-list';
-import { EstadisticasModule } from '../estadisticas/estadisticas.module';
 
 
 const uiModules = [

@@ -1,67 +1,113 @@
-.page-container {
-  height: 100%;
-  background: #F3F3E6;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
+* {
+  font-family: "Perpetua Titling MT", serif;
+ }
+
+ ::ng-deep .mdc-list-item__primary-text {
+  font-family: "Perpetua Titling MT", serif !important;
 }
-.page-container a {
-  color: inherit;
-  text-decoration: none;
+
+ .app-title {
+  color: #3AC43A;
+  font-size: xx-large;
+  align-items: flex-end;
+  margin-left: 5px;
+  margin-top: 40px;
+ }
+
+.sidenav {
+  margin-left: 2%;
+  width: 100%;
 }
-.page-container header {
-  background: #3ac43a;
-  color: #fff;
-  padding: 18px 24px;
-  font-size: 14px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
+
+.mat-elevation-z4 {
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)
 }
-.page-container header .menu-button {
-  margin-right: 24px;
-  min-width: 0;
-  padding: 0;
-  line-height: normal;
-}
-.page-container header .app-title {
-  padding: 0 3px;
-}
-.sidenav-container {
-  flex: 1;
-}
-.sidenav-container .sidenav {
-  min-width: 80%;
-  color:#3ac43a;
-}
-.sidenav-container .sidenav a {
+
+.sidenav button {
   display: block;
-  padding: 6px 24px;
   width: 100%;
   text-align: left;
+  color:#3AC43A
 }
-.sidenav-container main {
-  padding: 18px 24px;
+
+h1 {
+  color: #3AC43A;
+}
+
+h2{
+  font-size: 0.75em;
+  color: #006400;
+  text-align: center;
+}
+
+h3{
+  font-size: 14px;
+  color: #006400;
+  text-align: left;
+  background-color: #E7E7CF;
+  height: 15px;
+  padding: 15px;
+  align-content: center;
+}
+
+.material-icons{
+  font-family: 'Material Icons' !important;
+  color:#3AC43A
+}
+
+mat-grid-tile {
+  background: #F3F3E6;
+}
+
+::ng-deep .mat-grid-tile-content{
+  align-items: normal !important;
+  justify-content: start !important;
+  display: inline-flex !important;
+}
+
+.logo-nav {
+  display: inline-flex;
+  align-items: center;
 }
 
 .logo-nav img {
-  width: 110px;
-  height: 50px;
-  margin-left: 5%;
+  width: 130px;
+  height: 70px;
+  margin-left: 0%;
 }
 
-p {
-  font-family: "Perpetua Titling MT", serif;
+.right_panel {
+  background-color: #F3F3E6;
+  background-image: url('pebbles.png');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
-a {
-  font-family: "Perpetua Titling MT", serif;
+.main_content {
+  color: #3AC43A;
+  text-align: center;
+  width: 150%;
 }
 
-.app-title {
-  font-family: "Perpetua Titling MT", serif;
-  color: #ffffff;
-  font-size: large;
+.mat-divider {
+  border-top-color:#3AC43A;
+}
+
+.header_icon {
+  margin-left: 0%;
+  display: flex;
+}
+
+.header_icon mat-icon{
+  color: #F2CB05;
+  font-size: 50px;
+  font-weight: bold;
+  overflow: visible;
+}
+
+.mat-elevation-z8 {
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 0px 8px 10px 1px rgba(0, 0, 0, 0), 0px 0px 14px 2px rgba(0, 0, 0, 0.12)
 }
 
 .parent {
@@ -76,68 +122,6 @@ a {
   flex-wrap:initial;
 }
 
-.mat-mdc-standard-chip {
-  --mdc-chip-label-text-color: #fff;
-  --mdc-chip-elevated-container-color: #3ac43a;
-}
-
-.botonAppSolo{
-  height: 40px;
-  width: 80%;
-  background-color: #3AC43A;
-  border-radius: 10px;
-  color: white;
-  border: none;
-  font-size: 0.75em;
-  font-weight: bold;
-  text-transform: uppercase;
-  box-shadow:inset 2px 2px 2px 2px #1F7E1E;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.page-title {
-  font-family: "Perpetua Titling MT", serif;
-  color: #3AC43A;
-  font-size: x-large;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-
-.botonAppDos{
-  height: 40px;
-  width: 40%;
-  background-color: #3AC43A;
-  border-radius: 10px;
-  color: white;
-  border: none;
-  font-size: 0.70em;
-  font-weight: bold;
-  text-transform: uppercase;
-  box-shadow:inset 2px 2px 2px 2px #1F7E1E;
-  display: inline-block !important;
-  margin-top: 5%;
-  margin-left: 5% !important;
-  margin-right: 5% !important;
-}
-
-.content {
-  font-family: "Perpetua Titling MT", serif;
-  color: #3AC43A;
-  font-size: larger;
-  text-align: center;
-}
-
 .mat-mdc-progress-spinner {
   --mdc-circular-progress-active-indicator-color: #F2CB05
 }
@@ -147,6 +131,7 @@ a {
   height: 70px;
   width: 70px;
   color: #F2CB05;
+  margin-left: 10px;
 }
 
 .container {
@@ -158,11 +143,7 @@ a {
 }
 
 .box {
-  width: 100%;
-  height: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .overlay {
@@ -181,9 +162,4 @@ a {
   position: relative;
   margin: 7px;
   display: inline-block;
-}
-
-button {
-  margin-right: 8px;
-  font-family: "Perpetua Titling MT", serif !important;
 }
