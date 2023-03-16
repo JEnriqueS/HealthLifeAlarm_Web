@@ -2,6 +2,8 @@
 
 El prototipo no funcional de **Health Life Alarm** en su versión web ha sido construido como una aplicación de **angular** cuyo código se encuentra disponible en la rama **main** de este repositorio.
 
+La aplicación ha sido construida para que pueda navegar entre páginas interactuando con los menús y botones, sin embargo, ningún dato ingresado es procesado ni considerado para que la aplicación responda a ellos.
+
 A continuación, se presenta información importante para el despliegue y uso de la aplicación:
 
 ## Tecnologías usadas para la construcción
