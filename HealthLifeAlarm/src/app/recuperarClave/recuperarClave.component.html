@@ -8,49 +8,53 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
   </head>
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12">
-        <h2 class="display-1">Recuperar clave</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div id="icono">
-        <img src="./assets/img/LogoApp.png" width="200" height="100"/>
-      </div>
-    </div>
-    <div class="row">
-      <div id="ingresarCorreo">
-        <p>Ingrese su correo electrónico:</p>
-      </div>
-    </div>
-    <div class="row">
-      <div id="textfield">
-        <input type="text" id="clave" name="clave" value="Email">
-      </div>
-    </div>
-    <div class="row" id="buttons">
       <div class="col-6">
-        <button type="button" id="btn_volver" [routerLink]="['/']">VOLVER</button>
+        <div class="row">
+          <div id="titulo">
+            <h1 class="display-1" style="text-transform: lowercase !important;">¿Olvidó su clave?</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" id="textfield">
+            <div>
+              <h2>Ingrese su correo electrónico:</h2>
+            </div>
+            <div>
+              <input matInput type="text" id="clave" name="clave" placeholder="email">
+            </div>
+          </div>
+        </div>
+        <div class="row" id="buttons">
+          <div class="col-6">
+            <button type="button" id="btn_volver" [routerLink]="['/']">VOLVER</button>
+          </div>
+          <div class="col-6">
+            <button type="button" id="btn_confirmar" (click)="openMensajeConfirmation()">CONFIRMAR</button>
+          </div>
+        </div>
       </div>
       <div class="col-6">
-        <button type="button" id="btn_confirmar" (click)="openMensajeConfirmation()">CONFIRMAR</button>
+        <div>
+          <img src="./assets/img/backgroundImage.jpg" alt="imagenCorportativa" style="width:100%;">
+        </div>
       </div>
     </div>
 
     <ng-template let-data #msjConfirmacionDialog>
-      <div class="content">
-        <h3 mat-dialog-title style="font-size: 1em; color:'#3AC43A'; text-align: center;">Se ha restablecido su clave. Verifique su correo electrónico</h3>
-        <br>
+      <div class="content" style="background-color: white">
+        <h3 mat-dialog-title>Enviado</h3>
+        <mat-icon style="vertical-align: middle;">done</mat-icon>
+        <h3 mat-dialog-text>Se ha reestablecido satisfactoriamente su clave. Por favor, verifique su correo electrónico.</h3>
+
         <div mat-dialog-actions align="end">
-          <button mat-button (click)="onNoClick()" [routerLink]="['/']" style="margin-right: 28%; width: 50%; background-color:'#3AC43A'; color:white">ACEPTAR</button>
+          <button id="buttondg" mat-button (click)="onNoClick()" [routerLink]="['/']">ACEPTAR</button>
         </div>
       </div>
     </ng-template>
-
 
   </div>
 

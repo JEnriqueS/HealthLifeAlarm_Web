@@ -3,9 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RecuperarClaveComponent } from './recuperarClave.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 
 const uiModules = [
-  MatFormFieldModule
+  MatFormFieldModule,
+  MatIconModule
 ]
 
 @NgModule({

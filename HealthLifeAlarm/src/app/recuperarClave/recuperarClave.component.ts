@@ -14,7 +14,7 @@ export class RecuperarClaveComponent implements OnInit {
 
   openMensajeConfirmation() {
     this.dialogRef = this.dialog.open(this.msjConfirmacionDialog,
-      { height: '200px', width: '300px' });
+      { height: '400px', width: '600px' });
   }
 
   onNoClick(): void {
