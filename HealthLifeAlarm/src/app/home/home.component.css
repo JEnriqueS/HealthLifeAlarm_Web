@@ -1,0 +1,110 @@
+* {
+  font-family: "Perpetua Titling MT", serif;
+  background: #F3F3E6;
+ }
+
+ ::ng-deep .mdc-list-item__primary-text {
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+ .app-title {
+  color: #3AC43A;
+  font-size: xx-large;
+  align-items: flex-end;
+  margin-left: 5px;
+  margin-top: 40px;
+ }
+
+.sidenav {
+  margin-left: 2%;
+  width: 100%;
+}
+
+.mat-elevation-z4 {
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)
+}
+
+.sidenav button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  color:#3AC43A
+}
+
+h1 {
+  color: #3AC43A;
+}
+
+h2{
+  font-size: 0.75em;
+  color: #006400;
+  text-align: center;
+}
+
+h3{
+  font-size: 14px;
+  color: #006400;
+  text-align: left;
+  background-color: #E7E7CF;
+  height: 15px;
+  padding: 15px;
+  align-content: center;
+}
+
+.material-icons{
+  font-family: 'Material Icons' !important;
+  color:#3AC43A
+}
+
+mat-grid-tile {
+  background: #F3F3E6;
+}
+
+::ng-deep .mat-grid-tile-content{
+  align-items: normal !important;
+  justify-content: start !important;
+  display: inline-flex !important;
+}
+
+.logo-nav {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-nav img {
+  width: 130px;
+  height: 70px;
+  margin-left: 0%;
+}
+
+.center_panel {
+  background-image: url('home_backgroundImage.jpg');
+  background-size: cover;
+  height: 100%;
+  width: 250%;
+}
+
+.main_content {
+  color: #3AC43A;
+  text-align: justify;
+}
+
+.mat-divider {
+  border-top-color:#3AC43A;
+}
+
+.header_icon {
+  margin-left: 0%;
+  display: inline-flex;
+}
+
+.header_icon mat-icon{
+  color: #F2CB05;
+  font-size: 50px;
+  font-weight: bold;
+  overflow: visible;
+}
+
+.mat-elevation-z8 {
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 0px 8px 10px 1px rgba(0, 0, 0, 0), 0px 0px 14px 2px rgba(0, 0, 0, 0.12)
+}

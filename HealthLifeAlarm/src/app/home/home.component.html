@@ -1,0 +1,28 @@
+<mat-grid-list cols="4" rowHeight="2:1">
+  <mat-grid-tile [colspan]="4 " [rowspan]="1">
+    <div class="logo-nav">
+      <img src="./assets/img/LogoApp.png">
+      <div class="app-title">Health Life Alarm</div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="3" class="mat-elevation-z8">
+    <mat-nav-list class="sidenav mat-elevation-z8">
+      <h3>Menú principal</h3>
+      <button mat-button [routerLink]="'/mis_habitos'"><mat-icon>home</mat-icon>Home</button>
+      <button mat-button [routerLink]="'/mis_habitos'"><mat-icon>fitness_center</mat-icon>Mis Hábitos</button>
+      <button mat-button [routerLink]="'/mi_progreso'"><mat-icon>bar_chart</mat-icon>Mi Progreso</button>
+      <button mat-button [routerLink]="'/estadisticas'"><mat-icon>pie_chart</mat-icon>Estadisticas</button>
+      <button mat-button [routerLink]="'/actualizar_datos'"><mat-icon>manage_accounts</mat-icon>Actualizar Datos</button>
+      <button mat-button [routerLink]="'/eliminar_cuenta'"><mat-icon>delete_forever</mat-icon>Eliminar Cuenta</button>
+      <button mat-button [routerLink]=""><mat-icon>exit_to_app</mat-icon>Cerrar Sesión</button>
+    </mat-nav-list>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="3" [rowspan]="3">
+    <div class="main_content">
+      <div class="header_icon">
+        <h1>Bienvenido Nombre Usuario!</h1>
+      </div>
+      <div class="center_panel"></div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

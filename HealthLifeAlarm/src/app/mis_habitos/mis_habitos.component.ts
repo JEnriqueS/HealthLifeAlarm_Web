@@ -1,6 +1,5 @@
-import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
-import {MatDialog} from '@angular/material/dialog';
-import { NavigationEnd, Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mis_habitos',
@@ -8,10 +7,7 @@ import { NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./mis_habitos.component.css']
 })
 export class Mis_habitosComponent implements OnInit {
-  showSideNav = true;
-  constructor(private router: Router) {
-
-  }
+  constructor(private router: Router) {  }
 
   ngOnInit() {
   }

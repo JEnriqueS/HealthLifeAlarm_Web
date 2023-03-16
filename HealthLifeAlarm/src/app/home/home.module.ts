@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HomeComponent } from './home.component';
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
@@ -9,7 +10,6 @@ import {MatListModule} from '@angular/material/list';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatTableModule} from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { Mis_habitosComponent } from './mis_habitos.component';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatInputModule} from '@angular/material/input';
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -36,8 +36,7 @@ const uiModules = [
     uiModules,
     AppRoutingModule
   ],
-  declarations: [Mis_habitosComponent],
-  exports: [Mis_habitosComponent, uiModules]
+  declarations: [HomeComponent],
+  exports: [HomeComponent, uiModules]
 })
-export class Mis_habitosModule { }
-
+export class HomeModule { }
