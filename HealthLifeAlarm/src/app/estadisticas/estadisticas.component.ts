@@ -9,7 +9,7 @@ import { Color, ScaleType } from '@swimlane/ngx-charts';
 export class EstadisticasComponent{
   public isMenuOpen: boolean = false;
 
-  view: [number, number] = [350, 200];
+  view: [number, number] = [450, 320];
 
   // options
   showXAxis: boolean = true;
