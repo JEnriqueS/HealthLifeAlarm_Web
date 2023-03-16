@@ -2,6 +2,7 @@ h1{
   text-align: center;
   margin-top: 10%;
   color: #3AC43A;
+  font-size: 2em;
 }
 
 #icono{
@@ -10,8 +11,9 @@ h1{
 }
 
 #textfield{
-  text-align: center;
-  margin-top: 10%;
+  text-align: left;
+  margin-top: 5%;
+  margin-left: 20%;
 }
 
 label{
@@ -34,10 +36,10 @@ label{
 
 input{
   border: none;
-  height: 50px;
+  height: 40px;
   border-radius: 5px;
   background-color: white;
-  width: 50%;
+  width: 70%;
   box-shadow:inset 0px -3px 0px 0px #D5DBDB;
 }
 
@@ -52,16 +54,15 @@ img{
 
 p{
   color: #3AC43A;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 button{
-  height: 60px;
+  height: 45px;
   width: 25%;
   background-color: #3AC43A;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   border: none;
-  font-size: 1.25em;
-  font-weight: bold;
+  font-size: 1em;
 }

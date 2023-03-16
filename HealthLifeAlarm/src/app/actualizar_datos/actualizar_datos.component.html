@@ -13,21 +13,31 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-6">
-        <div class="selector">
+        <div class="row">
           <div>
-            <h1>¿Realmente desea eliminar su cuenta?</h1>
+            <mat-icon style="vertical-align: middle;">info</mat-icon>
           </div>
           <div>
-            <h2>Se eliminará permanentemente:</h2>
+            <h1>Actualizar información</h1>
           </div>
-          <div class="row">
-            <div class="col">
-              <mat-icon style="vertical-align: middle;">delete_forever</mat-icon>
+          <div class="col" id="textfield">
+            <div>
+              <label for="usuario">Usuario:</label>
             </div>
-            <div class="col">
-              <p>- Datos de perfil</p>
-              <p>- Configuraciones</p>
-              <p>- Información histórica</p>
+            <div>
+              <input matInput type="text" id="usuario" name="usuario" value="albertofernandez53">
+            </div>
+            <div>
+              <label for="correo">Correo electrónico:</label>
+            </div>
+            <div>
+              <input matInput type="text" id="correo" name="usuario" value="albertofernandez53@gmail">
+            </div>
+            <div>
+              <label for="clave">Clave:</label>
+            </div>
+            <div>
+              <input matInput type="text" id="clave" name="clave">
             </div>
           </div>
         </div>
@@ -35,10 +45,10 @@
 
         <div class="row" id="buttons">
           <div class="col-6">
-            <button type="button" id="btn_volver" [routerLink]="['/']">CANCELAR</button>
+            <button type="button" id="btn_volver" [routerLink]="['/mis_habitos']">VOLVER</button>
           </div>
           <div class="col-6">
-            <button type="button" id="btn_confirmar">CONFIRMAR</button>
+            <button type="button" id="btn_confirmar" [routerLink]="['/mis_habitos']">CONFIRMAR</button>
           </div>
         </div>
       </div>

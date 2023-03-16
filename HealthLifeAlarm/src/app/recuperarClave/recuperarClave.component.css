@@ -2,11 +2,14 @@ h1{
   text-align: center;
   margin-top: 10%;
   color: #3AC43A;
+  font-size: 2em;
 }
 
 h2{
   text-align: center;
   color: #3AC43A;
+  font-size: 1.5em;
+  font-weight: normal;
 }
 
 #textfield{
@@ -21,13 +24,13 @@ h2{
 
 input{
   border: none;
-  height: 60px;
+  height: 45px;
   border-radius: 5px;
   background-color: white;
   width: 50%;
   box-shadow:inset 0px -3px 0px 0px #D5DBDB;
   margin-top: 10%;
-  font-size: 2em;
+  font-size: 1.25em;
   padding-left: 20px;
 }
 
@@ -45,7 +48,7 @@ p{
 }
 
 #buttons{
-  margin-top: 20%;
+  margin-top: 15%;
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
@@ -53,11 +56,11 @@ p{
 }
 
 button{
-  height: 100px;
-  width: 70%;
-  border-radius: 10px;
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
   border: none;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -73,7 +76,7 @@ button{
 
 input::placeholder{
   padding-left: 10px;
-  font-size: 1em;
+  font-size: 0.75em;
 }
 
 h3{

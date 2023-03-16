@@ -13,7 +13,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-6">
-        <div class="selector">
+        <div class="row">
           <div>
             <h1>¿Realmente desea eliminar su cuenta?</h1>
           </div>
@@ -30,17 +30,17 @@
               <p>- Información histórica</p>
             </div>
           </div>
+          <div class="row" id="buttons">
+            <div class="col-6">
+              <button type="button" id="btn_volver" [routerLink]="['/mis_habitos']">CANCELAR</button>
+            </div>
+            <div class="col-6">
+              <button type="button" id="btn_confirmar" [routerLink]="['/']">CONFIRMAR</button>
+            </div>
+          </div>
+
         </div>
 
-
-        <div class="row" id="buttons">
-          <div class="col-6">
-            <button type="button" id="btn_volver" [routerLink]="['/mis_habitos']">CANCELAR</button>
-          </div>
-          <div class="col-6">
-            <button type="button" id="btn_confirmar" [routerLink]="['/']">CONFIRMAR</button>
-          </div>
-        </div>
       </div>
       <div class="col-6">
         <div>

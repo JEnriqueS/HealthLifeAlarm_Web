@@ -25,33 +25,40 @@
     </mat-sidenav>
     <mat-sidenav-content>
       <main>
-        <div>
-          <h2>Hábitos más frecuentados en el último mes:</h2>
+        <div class="container">
+          <div class="row">
+            <div class ="col">
+                <h2>Distribución de tiempo empleado por hábito:</h2>
+                <app-pieChart></app-pieChart>
+            </div>
+            <div class ="col">
+                <h2>Hábitos más frecuentados en el último mes:</h2>
+              <div>
+                <ngx-charts-bar-horizontal
+                [view]="view"
+                [scheme]="colorScheme"
+                [results]="single"
+                [gradient]="gradient"
+                [xAxis]="showXAxis"
+                [yAxis]="showYAxis"
+                [legend]="showLegend"
+                [showXAxisLabel]="showXAxisLabel"
+                [showYAxisLabel]="showYAxisLabel"
+                [xAxisLabel]="xAxisLabel"
+                [yAxisLabel]="yAxisLabel"
+                (select)="onSelect($event)"
+                (activate)="onActivate($event)"
+                (deactivate)="onDeactivate($event)">
+              </ngx-charts-bar-horizontal>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div>
-          <ngx-charts-bar-horizontal
-          [view]="view"
-          [scheme]="colorScheme"
-          [results]="single"
-          [gradient]="gradient"
-          [xAxis]="showXAxis"
-          [yAxis]="showYAxis"
-          [legend]="showLegend"
-          [showXAxisLabel]="showXAxisLabel"
-          [showYAxisLabel]="showYAxisLabel"
-          [xAxisLabel]="xAxisLabel"
-          [yAxisLabel]="yAxisLabel"
-          (select)="onSelect($event)"
-          (activate)="onActivate($event)"
-          (deactivate)="onDeactivate($event)">
-        </ngx-charts-bar-horizontal>
-        </div>
-        <div>
-          <h2 style="margin-top: 20%;">Distribución de tiempo empleado por hábito:</h2>
-        </div>
-        <div>
-          <app-pieChart></app-pieChart>
-        </div>
+
+
+
+
         <div class="row" id="buttons">
           <div>
             <button mat-button type="button" id="btn_volver" [routerLink]="['/mi_progreso']">VOLVER</button>
