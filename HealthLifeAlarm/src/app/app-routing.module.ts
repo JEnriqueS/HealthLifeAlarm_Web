@@ -17,7 +17,9 @@ const routes: Routes = [
   {
     path: 'mis_habitos',
     component: Mis_habitosComponent,
-    pathMatch: 'full'
+    children: [
+      {path: 'progreso', component: Mi_progresoComponent, outlet: 'side'}
+    ]
   },
   {
     path: 'mi_progreso',

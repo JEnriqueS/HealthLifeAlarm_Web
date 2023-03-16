@@ -12,6 +12,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { Mis_habitosComponent } from './mis_habitos.component';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatInputModule} from '@angular/material/input';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { EstadisticasModule } from '../estadisticas/estadisticas.module';
 
 
 const uiModules = [
@@ -24,17 +26,19 @@ const uiModules = [
   MatTableModule,
   MatFormFieldModule,
   MatRadioModule,
-  MatInputModule
+  MatInputModule,
+  MatGridListModule
 ];
 
 @NgModule({
   imports: [
     CommonModule,
     uiModules,
-    AppRoutingModule
+    AppRoutingModule,
+    EstadisticasModule
   ],
   declarations: [Mis_habitosComponent],
-  exports: [Mis_habitosComponent, uiModules]
+  exports: [Mis_habitosComponent, uiModules, EstadisticasModule]
 })
 export class Mis_habitosModule { }
 
